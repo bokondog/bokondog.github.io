@@ -6,17 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/zenburn.css">
   <link rel="icon" href="assets/frog.ico">
+  <script src="js/script.js"></script>
   <title>Glenn Bokondo - Curriculum Vitae</title>
 </head>
 
 <body>
-  <a id="top"></a>
-  <div class="top-container">
-    <div class="profile">
+  <header>
+    <nav class="flex-container">
+      <ul class="flex-container">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="top-gradient">
+    <div class="container reveal home">
+      <img class="logo" src="assets/logo_animation.gif" alt="animated box logo">
+      <h1 class="reveal">Hello, world!</h1>
+    </div>
+  </section>
+  <hr class="reveal">
+  <section id="about" class="top-container">
+    <div class="profile container reveal">
       <img class="profile-portrait" src="assets/self.png" alt="self-portrait of the author"></img>
-      <hr>
-      <section id="introduction">
-        <h4>Intro</h4>
+      <h2>About</h2>
+      <div class="card" id="intro">
         <p>Alles kan beter. Met deze kritische
           houding ben ik als softwareontwikkelaar
           steeds op zoek naar elke mogelijke
@@ -44,100 +61,107 @@
           vaardigheden verder aan te scherpen met de
           nodige ondersteuning.
         </p>
-      </section>
+      </div>
     </div>
-  </div>
-  <hr>
-  <div class="middle-container">
-    <div class="skills">
-      <h2>My Skills</h2>
-            <h3>Production work</h3>
-            <h4>Programming languages</h4>
-            <ul>
-              <li>JavaScript (TypeScript)</li>
-            </ul>
-            <h4>Tools</h4>
-            <ul>
-              <li>VSCode</li>
-              <li>Vue</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Elasticsearch</li>
-              <li>Docker</li>
-              <li>Git</li>
-              <li>Jira/BitBucket/Confluence</li>
-              <li>RabbitMQ</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
-            </ul>
-            <h4>Operating Systems</h4>
-            <ul>
-              <li>Windows</li>
-              <li>MacOS</li>
-              <li>GNU/Linux</li>
-            </ul>
-            <hr>
-            <h3>Personal projects</h3>
-            <h4>Programming languages</h4>
-            <ul>
-              <li>Python</li>
-              <li>Rust</li>
-            </ul>
-            <h4>Tools</h4>
-            <ul>
-              <li>NeoVim</li>
-              <li>Pico-8</li>
-              <li>Godot</li>
-              <li>Blender</li>
-            </ul>
-            <h4>Other</h4>
-            <ul>
-              <li>Fluent in English, Dutch, and French</li>
-              <li>Audio production (Ableton, Audacity)</li>
-              <li>Video production (Adobe Premiere, Kdenlive)</li>
-              <li>Image editing (Adobe Photoshop, GIMP, Aseprite)</li>
-            </ul>
-          </div>
-        </div>
+  </section>
+  <hr class="reveal">
+  <section id="skills" class="middle-container">
+    <div class="skills container reveal">
+      <h2>Skills</h2>
+      <div class="card reveal">
+        <h4>Programming languages</h4>
+        <ul>
+          <li>JavaScript (TypeScript)</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>Rust</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h4>Tools</h4>
+        <ul>
+          <li>VSCode</li>
+          <li>Vue</li>
+          <li>React</li>
+          <li>Node</li>
+          <li>Elasticsearch</li>
+          <li>Docker</li>
+          <li>Git</li>
+          <li>Jira/BitBucket/Confluence</li>
+          <li>RabbitMQ</li>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>NeoVim</li>
+          <li>Pico-8</li>
+          <li>Godot</li>
+          <li>Blender</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h4>Operating Systems</h4>
+        <ul>
+          <li>Windows</li>
+          <li>MacOS</li>
+          <li>GNU/Linux</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h4>Other</h4>
+        <ul>
+          <li>Fluent in English, Dutch, and French</li>
+          <li>Audio production (Ableton, Audacity)</li>
+          <li>Video production (Adobe Premiere, Kdenlive)</li>
+          <li>Image editing (Adobe Photoshop, GIMP, Aseprite)</li>
+        </ul>
+      </div>
     </div>
-    <div class="education">
+    </div>
+  </section>
+  <section id="education" class="education">
+    <div class="container reveal">
       <h4>Education</h4>
-      <p>Education goes here</p>
+      <div class="card">
+        <p>Education goes here</p>
+      </div>
     </div>
-    <div class="experience">
+  </section>
+  <section id="experience" class="experience">
+    <div class="container reveal">
       <h4>Experience</h4>
-      <table>
-        <thead>
-          <tr>
-            <th colspan="3">Werkervaring</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2014</td>
-            <td>Carglass</td>
-            <td>Callcenter agent</td>
-          </tr>
-          <tr>
-            <td>2018</td>
-            <td>ItsMe</td>
-            <td>Callcenter agent</td>
-          </tr>
-          <tr>
-            <td>2019</td>
-            <td>Oakfields</td>
-            <td>Software developer</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="3">Werkervaring</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2014</td>
+              <td>Carglass</td>
+              <td>Callcenter agent</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>ItsMe</td>
+              <td>Callcenter agent</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>Oakfields</td>
+              <td>Software developer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </section>
   </div>
-  <hr>
-  <div class="bottom-container">
-    <p>Glenn Bokondo 1PRO-A</p>
-    <p>Opdracht curriculum vitae</p>
-    <a href="#top">Terug naar boven</a>
-  </div>
+  <footer class="bottom-container flex-container bottom-gradient">
+    <span class="flex-item">Glenn Bokondo 1PRO-A</span>
+    <span class="flex-item">Opdracht curriculum vitae</span>
+    <a class="flex-item" href="#home">Terug naar boven</a>
+  </footer>
 </body>
 
 </html>
