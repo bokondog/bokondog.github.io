@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Silkscreen&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #3f3f3f;
     line-height: 2;
@@ -62,6 +66,19 @@ h3 {
 h4 {
     color: #DFAF8F;
     font-size: 1.3rem;
+    animation: headingAnimation 2s ease 0s 1 normal forwards;
+}
+
+@keyframes headingAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 h5 {
