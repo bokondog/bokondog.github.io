@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Silkscreen&display=swap');
+
 body {
     background-color: #3f3f3f;
     line-height: 2;
     color: #DCDCCC;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .top-container {
@@ -42,7 +44,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Silkscreen', sans-serif;
     margin: 30px auto;
 }
 
@@ -65,7 +67,6 @@ h4 {
 h5 {
     color: #DCA3A3;
     font-size: 1.1rem;
-    /* font-family: 'Space Mono', monospace; */
 }
 
 h6 {
@@ -80,7 +81,8 @@ strong,
 i,
 b,
 a {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Anonymous Pro', monospace;
+
 }
 
 
