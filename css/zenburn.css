@@ -35,24 +35,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.top-container {
-    text-align: center;
-    margin: 20px auto;
-    position: relative;
-}
-
-.middle-container {
-    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 
-.bottom-container {
+section .container {
+    margin: 100px;
+}
+
+footer {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .bottom-gradient {
@@ -182,10 +174,6 @@ hr {
     border-width: 10px;
     width: 50%;
     margin: 10px auto;
-}
-
-section .container {
-    margin: 100px;
 }
 
 .reveal {
