@@ -86,7 +86,7 @@ a {
 
 hr {
     border-style: none;
-    border-top-style: dotted;
+    border-top-style: groove;
     border-color: #262626;
     border-width: 10px;
     width: 15%;
