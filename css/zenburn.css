@@ -286,6 +286,10 @@ table {
     border-width: 10px;
 }
 
+tr:nth-child(even) {
+    background-color:#262626;
+}
+
 th,
 td {
     padding: 15px;
