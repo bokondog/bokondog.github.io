@@ -70,7 +70,7 @@ nav ul li a:hover {
     opacity: 1;
     filter: blur(0);
     text-decoration: none;
-    color: #DCA3A3;
+    color: #967474;
     letter-spacing: 2px;
 }
 
@@ -357,6 +357,9 @@ dfn:hover::before {
     border-width: 5px;
 }
 
+.flex {
+    display: flex;
+}
 
 .flex-container {
     display: inline-flex;
@@ -438,4 +441,135 @@ dfn:hover::before {
 
 .wrench:focus~#wrench {
     display: block
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    text-align: center;
+}
+
+
+/* HOME */
+.layout1 {
+    /* width takes 20% of the flex container */
+    width: 100%;
+}
+
+/* PORTRAIT */
+.layout2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ABOUT */
+.layout3 {
+    width: 70%;
+    flex-direction: column;
+}
+
+/* SKILLS */
+.layout4 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skills {
+    width: 100%;
+}
+
+.skill-slot {
+    margin: 2vw;
+}
+
+.prog-lang {
+    width: 40%;
+}
+
+.tools {
+    width: 60%;
+}
+
+.op-systems {
+    width: 40%;
+}
+
+.other {
+    width: 60%;
+
+}
+
+.first-skill-row {
+    width: 100%;
+    display: flex;
+}
+
+.second-skill-row {
+    width: 100%;
+    display: flex;
+}
+
+/* EDUCATION */
+.layout5 {
+    width: 50%;
+    flex-direction: column;
+}
+
+/* EXPERIENCE */
+.layout6 {
+    width: 50%;
+}
+
+.secret {
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 480px) {
+
+    .layout1,
+    .layout2,
+    .layout3,
+    .layout4,
+    .layout5,
+    .layout6 {
+        width: 100%;
+    }
+
+    .prog-lang,
+    .tools,
+    .op-systems,
+    .other
+    .secret
+    {
+        width: 100%;
+    }
+
+    * {
+        font-size: 1rem;
+    }
+
+    hr {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+
+    nav ul {
+        display: none;
+    }
 }
