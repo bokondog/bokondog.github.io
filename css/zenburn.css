@@ -532,9 +532,29 @@ main {
     width: 100%;
 }
 
+.mobile-table {
+    display: none;
+}
+
 
 /* Responsive */
 @media (max-width: 480px) {
+table{
+    display: none;
+}
+    .mobile-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-table > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-table > li {
+        display: block;
+    }
 
     main {
         display: flex;
