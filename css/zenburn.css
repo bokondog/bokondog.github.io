@@ -600,3 +600,15 @@ main {
         display: none;
     }
 }
+
+@media (min-width: 480px) and (max-width: 800px) {
+    table {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .layout5,
+    .layout6 {
+        width: 100%;
+    }
+}
