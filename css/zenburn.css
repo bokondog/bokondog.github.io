@@ -34,6 +34,13 @@ body {
     font-family: 'Anonymous Pro', monospace;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    text-align: center;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -94,7 +101,6 @@ nav ul li a:hover:before {
     transform-origin: left;
     transform: scaleX(1);
 }
-
 
 section {
     min-height: 100vh;
@@ -191,7 +197,6 @@ a:link:not(.nav-link) {
 a:visited:not(.nav-link) {
     color: #ECBCBC
 }
-
 
 strong {
     font-size: 1.5rem;
@@ -443,17 +448,8 @@ dfn:hover::before {
     display: block
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100px;
-    text-align: center;
-}
-
-
 /* HOME */
 .layout1 {
-    /* width takes 20% of the flex container */
     width: 100%;
 }
 
@@ -536,24 +532,10 @@ main {
     display: none;
 }
 
-
 /* Responsive */
 @media (max-width: 480px) {
-table{
-    display: none;
-}
-    .mobile-table {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile-table > ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mobile-table > li {
-        display: block;
+    table {
+        display: none;
     }
 
     main {
@@ -561,6 +543,20 @@ table{
         flex-wrap: wrap;
         height: 100px;
         text-align: center;
+    }
+
+    .mobile-table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-table>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-table>li {
+        display: block;
     }
 
     .first-skill-row {
@@ -618,6 +614,14 @@ table{
 
     nav ul {
         display: none;
+    }
+
+    footer {
+        font-family: 'Anonymous Pro', monospace;
+    }
+
+    footer>a {
+        font-family: 'Anonymous Pro', monospace;
     }
 }
 
