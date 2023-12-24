@@ -214,7 +214,7 @@ footer>a {
 }
 
 table {
-    width: 800px;
+    width: 100%;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -503,12 +503,12 @@ main {
 }
 
 .first-skill-row {
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 
 .second-skill-row {
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 
@@ -521,6 +521,11 @@ main {
 /* EXPERIENCE */
 .layout6 {
     width: 50%;
+    flex-direction: column;
+}
+
+.wide {
+    width: 80%;
 }
 
 .secret {
@@ -536,6 +541,20 @@ main {
         flex-wrap: wrap;
         height: 100px;
         text-align: center;
+    }
+
+    .first-skill-row {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .second-skill-row {
+        width: 80vw;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        transform: scale(2);
     }
 
     .layout1,
