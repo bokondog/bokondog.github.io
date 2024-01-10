@@ -7,6 +7,9 @@
 ::selection {
     background: rgba(0, 0, 0, 0.2);
 }
+:root {
+    --bg-color: #3f3f3f;
+}
 
 * {
     box-sizing: border-box;
@@ -21,14 +24,14 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #3f3f3f;
+    background: var(--bg-color);
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #F0DFAF;
 }
 
 body {
-    background-color: #3f3f3f;
+    background-color: var(--bg-color);
     line-height: 2;
     color: #DCDCCC;
     font-family: 'Anonymous Pro', monospace;
@@ -128,9 +131,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: 'Silkscreen', sans-serif;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 
 h1 {
@@ -160,6 +164,7 @@ h5 {
 
 h6 {
     color: #DFAF8F;
+    font-size: 1rem;
 }
 
 a {
@@ -249,7 +254,7 @@ th {
 
 thead th {
     background-color: #F0DFAF;
-    color: #3f3f3f;
+    color: var(--bg-color);
     font-family: 'Silkscreen', sans-serif;
 }
 
@@ -532,6 +537,70 @@ dfn:hover::before {
     display: none;
 }
 
+/* PORTFOLIO */
+.layout7 {
+    width: 80vw;
+    display: flex;
+}
+
+.layout8 {
+    width: 100vw;
+    display: flex;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.role-card {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: #363636;
+    border-color: #262626;
+    border-width: 5px;
+}
+
+.role-header {
+    text-align: center;
+    font-family: 'Silkscreen', sans-serif;
+    color:#DCA3A3;
+    font-size: 1.2rem;
+}
+
+.role-list{
+    list-style-type: circle;
+}
+
+.role-list > li {
+    display: block;
+    list-style-type: circle;
+}
+
+.card-question {
+    color:#8CD0D3;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.skill-table-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.log {
+    opacity: 0.9;
+}
+
+.log:hover{
+    opacity: 1.0;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
     table {
@@ -578,7 +647,9 @@ dfn:hover::before {
     .layout3,
     .layout4,
     .layout5,
-    .layout6 {
+    .layout6,
+    .layout7,
+    .layout8 {
         width: 100%;
     }
 
